@@ -141,7 +141,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
       <div class="col">
         <h1 class="header">Hastag cùng chúng tớ nhé</h1>
         <h3 class="content">Hãy ghi lại những khoảng khắc đáng nhớ này lên Facebook hay Instaram nhé.
-          Gắn thẻ của bạn với Hastag <span class="yellowhighlight">#weddingpage</span> .
+          Gắn thẻ của bạn với Hastag <a  href="https://instagram.com/explore/tags/LongNhiWedding/" target="_blank"><span class="yellowhighlight">#LongNhiWedding</span></a> .
         </h3>
       </div>
     </div>
@@ -189,7 +189,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
         <div class="arrow arrow-prev"></div>
       </div>
       <div id="video">
-        <div id="videobg" class="player hidded" data-property="{videoURL:'https://youtu.be/ezw4i_FvblU',containment:'#video',autoPlay:true, mute:true, showControls:false,startAt:0,stopAt:185,opacity:1,playOnlyIfVisible : false }"></div>
+        <div id="videobg" class="player hidded" data-property="{videoURL:'https://youtu.be/ezw4i_FvblU',containment:'#video',autoPlay:true, mute:true, showControls:false,showYTLogo:false,startAt:0,stopAt:185,opacity:1}"></div>
       </div>
   </section>
 
