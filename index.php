@@ -42,6 +42,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
       </div>
     </div>
   </div>
+
   <section class="intro">
     <div class="biglogo">
       <img src="acess/img/biglogo.png" alt="biglogo" width="402">
@@ -53,6 +54,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
       </a>
     </div>
   </section>
+
   <section id="story">
     <div class="row">
       <div class="col">
@@ -73,6 +75,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
       <div class="col people"><img id="right" src="acess/img/long.png"></div>
     </div>
   </section>
+
   <section id="events">
     <div>
       <div class="row_story">
@@ -132,6 +135,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
       </div>
     </div>
   </section>
+
   <section id="album">
     <div class="row">
       <div class="col">
@@ -184,10 +188,11 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
         <div class="arrow arrow-next"></div>
         <div class="arrow arrow-prev"></div>
       </div>
-      <div class="video" id="wp4">
-        <a id="video" class="player" data-property="{videoURL:'https://www.youtube.com/embed/ezw4i_FvblU,containment:'body',autoPlay:true, mute:true, startAt:0,opacity:1}"></a>
+      <div id="video">
+        <div id="videobg" class="player hidded" data-property="{videoURL:'https://youtu.be/ezw4i_FvblU',containment:'#video',autoPlay:true, mute:true, showControls:false,startAt:0,stopAt:185,opacity:1,playOnlyIfVisible : false }"></div>
       </div>
   </section>
+
   <section id="contact">
     <div class="row">
       <div class="col" style="padding-bottom: 0px;">
@@ -232,6 +237,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
       </div>
     </div>
   </section>
+
   <section id="location">
     <div class="row">
       <div class="col">
@@ -252,12 +258,14 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col mapbg ">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.414692149979!2d108.22245980081946!3d16.0439563615391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c2e2c1c48d%3A0x91fb550426114823!2zVHJ1bmcgVMOibSBI4buZaSBOZ2jhu4sgJiBUaeG7h2MgQ8aw4bubaSBLaW5nJ3MgUGFsYWNl!5e0!3m2!1svi!2s!4v1629567134450!5m2!1svi!2s" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </div>
   </section>
+
 </body>
+
 <footer>
   <div style="height: 50px;text-align: center;" class="">
     <a href="#story">
@@ -265,13 +273,13 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
     </a>
   </div>
   <div class="footer">
-    <p>© 2021 Copyright <a href="https://opteamserver.000webhostapp.com/">OPTeam</a>. All Right reserved.</p>
+    <p>© 2021 Copyright <a href="https://www.facebook.com/OPTeamBoss/">OPTeam</a>. All Right reserved.</p>
     <h2> Trang Web được tạo ra bởi 💕 cực bự của Long và Nhi. Đây là trang web chỉ phục vụ cho đám cưới, không cung cấp cho dịch vụ kinh doanh</h2>
   </div>
 </footer>
 <!-- file js -->
 <script src="acess/js/sprict.js"></script>
 <script src="acess/js/waypoint/lib/jquery.waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.9/jquery.mb.YTPlayer.min.js" integrity="sha512-rVFx7vXgVV8cmgG7RsZNQ68CNBZ7GL3xTYl6GAVgl3iQiSwtuDjTeE1GESgPSCwkEn/ijFJyslZ1uzbN3smwYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="acess/js/jquery.mb.YTPlayer.min.js"></script>
 
 </html>

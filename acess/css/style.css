@@ -6,9 +6,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
  */
 
 @charset "UTF-8";
-
-/* CSS Document */
-
+/********************* Define body ********************/
 ::-webkit-scrollbar {
   display: none;
 }
@@ -28,11 +26,10 @@ body {
   user-select: none;
   -webkit-user-select: none;
 }
-
-.logo {
-  float: left;
+.yellowhighlight {
+  color: #f3ca14;
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
 }
-
 /* ~~ Top Navigation Bar ~~ */
 
 #navigation-container {
@@ -93,7 +90,9 @@ body {
 .navigation-bar li a:hover {
   font-weight: 500;
 }
-
+.logo {
+  float: left;
+}
 #menu {
   float: right;
 }
@@ -111,6 +110,8 @@ body {
   z-index: 1;
   top: 0;
 }
+
+/* **************** Row & Col body ***************** */
 
 .row {
   display: flex;
@@ -135,6 +136,7 @@ body {
   text-align: left;
   width: 50%;
 }
+/* **************** Button  & Icon  ***************** */
 
 .button {
   background-color: #f3ca14;
@@ -167,6 +169,7 @@ body {
   font-family: "untitled-font-1";
   color: #f3ca14;
 }
+/* **************** Text style ***************** */
 
 h1 {
   font-family: "Playfair Display", serif;
@@ -185,14 +188,6 @@ h2 {
   color: #919191;
 }
 
-.biglogo {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  z-index: 1;
-  top: 17%;
-}
-
 h3 {
   font-family: "Crimson Text", serif;
   font-weight: 400;
@@ -202,6 +197,16 @@ h3 {
   letter-spacing: 5px;
   word-spacing: 10px;
 }
+/* **************** Logo style ***************** */
+
+.biglogo {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  top: 17%;
+}
+/* **************** content style ***************** */
 
 .content {
   font-family: "Playfair Display", serif;
@@ -231,12 +236,6 @@ h3 {
   line-height: 30px;
 }
 
-.yellowhighlight {
-  color: #f3ca14;
-  text-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
-  /* -webkit-text-stroke-width: .2px;
-	 -webkit-text-stroke-color: rgb(0, 0, 0); */
-}
 
 .footer {
   text-align: center;
@@ -276,13 +275,14 @@ h3 {
 }
 
 /* **************** Location ***************** */
-/* .infor
- {
-
-	 
- } */
 .col_fix {
   padding-bottom: 0px;
+}
+.mapbg
+{
+  background: #dfdfdf;
+  height: 500px;
+  padding: 0;
 }
 /* **************** Contact ***************** */
 
@@ -336,20 +336,12 @@ select {
 }
 /* **************** Video ***************** */
 
-.video {
+#video {
   width: 100% !important;
   height: 700px;
 }
 
-.YTwrapper {
-  width: 100%;
-  height: 100%;
-  cursor: none;
-  pointer-events: none;
-  background: #22222215;
-  z-index: -1;
-  opacity: 0;
-}
+
 
 /* ****************Slide Pic & Phone ***************** */
 
@@ -662,6 +654,7 @@ select {
   position: relative;
   animation-timing-function: ease-in-out;
   animation-fill-mode: both;
+  cursor: none;
 }
 
 .left {

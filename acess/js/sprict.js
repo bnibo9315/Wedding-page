@@ -40,17 +40,17 @@ $(document).ready(function () {
     }
   );
 
-  $("#wp4").waypoint(
+  $("#video").waypoint(
     function () {
-      $("#YTwrapper").removeClass("hidded");
+      $("#video").removeClass("hidded");
     },
     {
-      offset: "50%",
+      offset: "100%",
     }
   );
   /***************** VideoYoutube Function******************/
-    $(".player").mb_YTPlayer();
-    console.log('initialized');
+    $(".player").YTPlayer();
+
 
 
 
@@ -61,6 +61,7 @@ $(document).ready(function () {
   let next = document.querySelector(".arrow-next");
   let prev = document.querySelector(".arrow-prev");
   let item = document.querySelectorAll(".item");
+  
   let currdeg = 0;
   let active = 0;
   next.addEventListener("click", () => {
@@ -76,12 +77,6 @@ $(document).ready(function () {
 
     toggle();
   });
- $(function()
-  {
-    $(".player").mb_YTPlayer();
-    console.log('initialized');
-  });
-
 
 
   prev.addEventListener("click", () => {
@@ -97,6 +92,7 @@ $(document).ready(function () {
 
     toggle();
   });
+
 
   let toggle = () => {
     setTimeout(() => {
