@@ -65,9 +65,9 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
 
   <section id="story">
     <div class="w3-container" style="text-align: center;">
-      <div class="w3-display-container header">
-        <h1 class="w3-display-middle ">Chúng tớ đã gặp nhau như thế nào</h1>
-        <h3 class="w3-display-bottommiddle content">Ngày 9 tháng 3 năm 2015 là ngày chúng tớ chính thức hẹn hò đấy </h3>
+      <div class="w3-row-padding header">
+        <h1 class="w3-center ">Chúng tớ đã gặp nhau như thế nào</h1>
+        <h3 class="w3-center content">Ngày 9 tháng 3 năm 2015 là ngày chúng tớ chính thức hẹn hò đấy </h3>
       </div>
     </div>
     <div class="w3-row-padding " id="wp1">
@@ -284,7 +284,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script>
   var swiper = new Swiper('.swiper', {
-    slidesPerView: '2',
+    slidesPerView: 'auto',
     spaceBetween: 40,
     centeredSlides: true,
     loop: true,
