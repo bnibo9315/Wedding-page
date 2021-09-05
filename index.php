@@ -25,6 +25,8 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
   <!-- file css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link type="text/css" rel="stylesheet" href="acess/css/style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
 </head>
 
@@ -33,11 +35,17 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
     <div class="navigation-bar">
       <div id="navigation-container">
         <a href=""><img src="acess/img/logo.png" alt="logosmall"></a>
-        <ul>
+        <input type="checkbox" name="" id="">
+        <div class="hambuger-line" id="menu-phone">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul id="menu">
           <li><a href="#story">Câu chuyện</a></li>
           <li><a href="#album">Bộ ảnh</a></li>
-          <li><a href="#location">Địa điểm</a></li>
           <li><a href="#contact">Liên hệ</a></li>
+          <li><a href="#location">Địa điểm</a></li>
         </ul>
       </div>
     </div>
@@ -50,21 +58,21 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
     </div>
     <div class="floating_arrow">
       <a href="#story">
-        <i class="fas  fa-chevron-down fa-1x"></i>
+        <i class="fas fa-chevron-down fa-1x"></i>
       </a>
     </div>
   </section>
 
   <section id="story">
-    <div class="row">
-      <div class="col">
-        <h1 class="header">Chúng tớ đã gặp nhau như thế nào</h1>
-        <h3 class="content">Ngày 9 tháng 3 năm 2015 là ngày chúng tớ chính thức hẹn hò đấy </h3>
+    <div class="w3-container" style="text-align: center;">
+      <div class="w3-display-container header">
+        <h1 class="w3-display-middle ">Chúng tớ đã gặp nhau như thế nào</h1>
+        <h3 class="w3-display-bottommiddle content">Ngày 9 tháng 3 năm 2015 là ngày chúng tớ chính thức hẹn hò đấy </h3>
       </div>
     </div>
-    <div class="row " id="wp1">
-      <div class="col people"><img id="left" src="acess/img/nhi_op.png"></div>
-      <div class="col text">
+    <div class="w3-row-padding " id="wp1">
+      <div class="w3-col s4 m4 l4 people w3-hide-small"><img id="left" src="acess/img/nhi_op.png"></div>
+      <div class="w3-col s12 m4 l4 text">
         <h3 class="content introduce" id="intro">
           """ Chúng tớ lần đầu gặp nhau vào lớp 10 năm 2013. Lúc đấy cô ấy là một cô lớp phó học tập vô
           cùng đanh đá và cứng đầu. Nhưng không hiểu một lý do nào đó chàng trai ấy đã thích cô ấy ngay lần
@@ -72,22 +80,22 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
           tiếc rằng thời điểm đó cả hai chưa phù hợp để thuộc về nhau. Thật là ngốc nghếch phải không nào :) """
         </h3>
       </div>
-      <div class="col people"><img id="right" src="acess/img/long.png"></div>
+      <div class="w3-col s4 m4 l4 people w3-hide-small" style="height: 560px;"><img id="right" src="acess/img/long.png"></div>
     </div>
   </section>
 
   <section id="events">
-    <div>
-      <div class="row_story">
-        <div class="col" style="padding-top: 0%; padding: 0 0; padding-block-end: inherit;">
+    <div class="w3-content fix-content">
+      <div class="w3-container w3-padding-16">
+        <div class="w3-col l3" style="padding-top: 0%; padding: 0 0; padding-block-end: inherit;">
           <h1 style="margin-right:50%;font-size:30px;text-align: left;">Sự kiện</h1>
         </div>
       </div>
-      <div class="row_story" id="wp2">
-        <div class="col_story" style="padding-top: 0px;border-right:solid 1px #B5B5B5;">
+      <div class="w3-row-padding" id="wp2">
+        <div class="w3-col l6 ">
           <div id="left_st">
             <h1>09/03/2015 Đà Nẵng </h1>
-            <h3 class="story content">
+            <h3 class="story content m6 s6 l6">
               Đây là ngày mà chúng mình chính là người yêu của nhau đấy. Đó năm cuối cấp lớp 12
               .................................................................................
               .................................................................................
@@ -98,7 +106,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
           </div>
           <div id="up_st">
             <h1>09/03/2015 Đà Nẵng </h1>
-            <h3 class="story content">
+            <h3 class="story content m6 s6 l6">
               Đây là ngày mà chúng mình chính là người yêu của nhau đấy. Đó năm cuối cấp lớp 12
               .................................................................................
               .................................................................................
@@ -108,10 +116,10 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
             </h3>
           </div>
         </div>
-        <div class="col_story" style="padding-top: 0px;padding-left :150px;">
+        <div class="w3-col l6">
           <div id="right_st">
             <h1>09/03/2015 Đà Nẵng </h1>
-            <h3 class="story content">
+            <h3 class="story content m6 s6 l6">
               Đây là ngày mà chúng mình chính là người yêu của nhau đấy. Đó năm cuối cấp lớp 12
               .................................................................................
               .................................................................................
@@ -122,7 +130,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
           </div>
           <div id="up_st2">
             <h1>09/03/2015 Đà Nẵng </h1>
-            <h3 class="story content">
+            <h3 class="story content m6 s6 l6">
               Đây là ngày mà chúng mình chính là người yêu của nhau đấy. Đó năm cuối cấp lớp 12
               .................................................................................
               .................................................................................
@@ -136,128 +144,120 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
     </div>
   </section>
 
-  <section id="album">
-    <div class="row">
-      <div class="col">
-        <h1 class="header">Hastag cùng chúng tớ nhé</h1>
-        <h3 class="content">Hãy ghi lại những khoảng khắc đáng nhớ này lên Facebook hay Instaram nhé.
-          Gắn thẻ của bạn với Hastag <a  href="https://instagram.com/explore/tags/LongNhiWedding/" target="_blank"><span class="yellowhighlight">#LongNhiWedding</span></a> .
+  <section id="album" style="background:#fff">
+    <div class="w3-container">
+      <div class="w3-row-padding w3-padding-32 header">
+        <h1 class="w3-center ">Hastag cùng chúng tớ nhé</h1>
+        <h3 class="w3-center content">Hãy ghi lại những khoảng khắc đáng nhớ này lên Facebook hay Instaram nhé.
+          Gắn thẻ của bạn với Hastag <a href="https://instagram.com/explore/tags/LongNhiWedding/" target="_blank"><span class="yellowhighlight">#LongNhiWedding</span></a> .
         </h3>
       </div>
     </div>
-    <div class="row" id="wp3" style="border-bottom: solid 1px #B5B5B5;">
-      <div class="col_phone" id="up_phone">
+    <div class="w3-row-padding" id="wp3">
+      <div class="w3-col w3-center l6" id="up_phone">
         <img class="phone" src="acess/img/fbPhone.png">
       </div>
-      <div class="col_phone">
+      <div class="w3-col w3-center l6">
         <img class="phone" id="up_phone2" src="acess/img/instaPhone.png">
       </div>
     </div>
-    </div>
-    <div>
-      <div class="row">
-        <div class="col" style="padding :25px ;">
-          <h1 class="header">Bộ ảnh của chúng tớ</h1>
-          <h2>Đây là những kỉ niệm đẹp của chúng tớ và lưu giữ những khoảng khắc của tình yêu TO BỰ của chúng tớ đ. Chúng ta hãy cùng xem nhé !</h2>
+    <div class="w3-container">
+      <div class="w3-row-padding w3-padding-32 header">
+        <div class="w3-center">
+          <h1>Bộ ảnh của chúng tớ</h1>
+          <h3 class="content">Đây là những kỉ niệm đẹp của chúng tớ và lưu giữ những khoảng khắc của tình yêu TO BỰ của chúng tớ đấy. Chúng ta hãy cùng xem nhé !</h3>
         </div>
       </div>
-      <div class="slider">
-        <div class="wrapper">
-          <div style="background-image: url('acess/img/pic1.jpg')" alt="The Coffee House" class="item item1 active">
-            <div class="item__info">
-              <h1 class="item__name caption"><span>The Coffee House</span></h1>
-            </div>
-          </div>
-          <div style="background-image: url('acess/img/pic2.jpg')" alt="Hội An nè" class="item item2">
-            <div class="item__info">
-              <h1 class="item__name caption"><span>Hội An nè</span></h1>
-            </div>
-          </div>
-          <div style="background-image: url('acess/img/pic3.jpg')" alt="Chuyến đi Đà Lạt đầu tiên" class="item item3">
-            <div class="item__info">
-              <h1 class="item__name caption"><span>Chuyến đi Đà Lạt đầu tiên</span></h1>
-            </div>
-          </div>
-          <div style="background-image: url('acess/img/pic4.jpg')" alt="Cùng đi ăn lẩu Thái Market" class="item item4">
-            <div class="item__info">
-              <h1 class="item__name caption"><span>Cùng đi ăn lẩu Thái Market</span></h1>
-            </div>
-          </div>
-        </div>
 
-        <div class="arrow arrow-next"></div>
-        <div class="arrow arrow-prev"></div>
-      </div>
-      <div id="video">
-        <div id="videobg" class="player hidded" data-property="{videoURL:'https://youtu.be/ezw4i_FvblU',containment:'#video',autoPlay:true, mute:true, showControls:false,showYTLogo:false,startAt:0,stopAt:185,opacity:1}"></div>
+      <div class="swiper w3-padding-16">
+        <div class="swiper-wrapper w3-row-padding ">
+          <div class="swiper-slide"><img id="pic" src="acess/img/pic1.jpg" class="w3-center" alt="The Coffee House">
+            <h3 class="w3-center" id="alt"></h3>
+          </div>
+          <div class="swiper-slide"><img id="pic" src="acess/img/pic2.jpg" class="w3-center" alt="Hội An nè">
+            <h3 class="w3-center" id="alt"></h3>
+          </div>
+          <div class="swiper-slide"><img id="pic" src="acess/img/pic3.jpg" class="w3-center" alt="Chuyến đi Đà Lạt đầu tiên">
+            <h3 class="w3-center" id="alt"></h3>
+          </div>
+          <div class="swiper-slide"><img id="pic" src="acess/img/pic4.jpg" class="w3-center" alt="Cùng đi ăn lẩu Thái Market">
+            <h3 class="w3-center" id="alt"></h3>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
   </section>
 
   <section id="contact">
-    <div class="row">
-      <div class="col" style="padding-bottom: 0px;">
-        <h1 class="header">Để lại thông tin của bạn giúp chúng tớ nhé</h1>
-        <h3 class="content">Những thông tin này sẽ giúp chúng tớ liên lạc và hỗ trợ bạn khi tham dự buổi tiệc nhé !!
+    <div class="w3-container w3-row-padding">
+      <div class="w3-col l6 m12 s12 " style="padding-bottom: 0px;">
+        <h1 class="w3-center w3-padding-16">Để lại thông tin của bạn giúp chúng tớ nhé</h1>
+        <h3 class="w3-center content">Những thông tin này sẽ giúp chúng tớ liên lạc và hỗ trợ bạn khi tham dự buổi tiệc nhé !!
         </h3>
-        <form action="POST">
-          <div class="row " style=" text-align: left;">
-            <div class="col col_ipleft" style="margin-right: -100px;">
-              <input class="input" type="text" name="username" placeholder="Họ và tên của bạn nhé" />
-              <i class="fas fa-user fa-2x icon_ip" style="color: #f3ca14;"></i>
+        <form action="./php/sentdata.php" method="POST" enctype="multip" id="SData">
+          <div class="w3-row-padding w3-padding-32">
+            <div class="w3-col l6 m12" style=" text-align: left;">
+              <div class="w3-padding-16">
+                <input class="w3-input w3-border w3-animate-input" type="text" name="username" placeholder="Họ và tên của bạn nhé" require />
+              </div>
+              <div class="w3-padding-16 ">
+                <input class="w3-input w3-border w3-animate-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" type="number" name="phone" placeholder="Số điện thoại nữa" require />
+              </div>
             </div>
-            <div class="col col_ipleft">
-              <input class="input col_ip2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" type="number" name="phone" placeholder="Số điện thoại nữa" />
-              <i class="fas fa-phone-alt fa-2x icon_ip" style="color: #f3ca14;"></i>
+            <div class="w3-col l6 m12" style=" text-align: left;">
+              <div class="w3-padding-16">
+                <input class="w3-input w3-border  w3-animate-input" min="1" max="20" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" type="number" name="number" placeholder="Bạn đi bao nhiêu người nè" require />
+              </div>
+              <div class="w3-padding-16">
+                <select class="w3-select w3-border w3-left-align" style="background: #fff; color:#666;" name="type_user" require>
+                  <option value="" disabled selected hidden>Bạn ở bên nào nè</option>
+                  <option value="type_g">Nhà Gái</option>
+                  <option value="type_tr">Nhà Trai</option>
+                  <option value="type_all">Bạn Chung</option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div class="row " style=" text-align: left;">
-            <div class="col col_ipleft" style="margin-right: -100px;">
-              <input class="input " min="1" max="20" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="2" type="number" name="email" placeholder="Bạn đi bao nhiêu người nè" />
-              <i class="fas fa-users fa-2x icon_ip" style="color: #f3ca14;"></i>
+            <div class="w3-col w3-padding-16 w3-center">
+              <input class="w3-input w3-border w3-animate-input" style="height:100px;" placeholder="Để lại tin nhắn cho bọn mình nhé " name="messeger" />
             </div>
-            <div class="col col_ipleft">
-              <select placeholder="Số điện thoại nữa" class="input col_ip2" style="width: 360px;  color: #666;" id="type_user">
-                <option value="" disabled selected hidden>Bạn bên Nhà Gái hay Nhà Trai nè</option>
-                <option value="type_g">Nhà Gái</option>
-                <option value="type_tr">Nhà Trai</option>
-                <option value="type_all">Bạn Chung</option>
-              </select>
-              <i class="fas fa-smile-beam fa-2x icon_ip" style="color: #f3ca14;"></i>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <a type="submit" class="button">Liên hệ với chúng tớ nhé 💕 </a>
+            <div class="w3-col w3-padding-16">
+              <div class="w3-center">
+                <button type="submit" name="submit" class="button" style="border:none">Liên hệ với chúng tớ nhé 💕</button>
+              </div>
             </div>
           </div>
         </form>
       </div>
-      <div class="col" style="padding-top: 0px; padding: 0px;border-left: solid 1px #f3ca14;">
+      <div class="w3-col w3-center l6 w3-hide-small w3-hide-medium">
         <img class="missing" src="acess/img/missing.png">
       </div>
     </div>
   </section>
 
   <section id="location">
-    <div class="row">
-      <div class="col">
+    <div class="w3-container w3-row-padding w3-padding-32">
+      <div class="w3-col l4 w3-center">
         <div class="icon-calendar"><i class="far fa-calendar-alt fa-2x"></i></div>
         <h1>Ngày 9 Tháng 3, 2022</h1>
-        <h2>11:00 PM</h2>
+        <h3 class="content">11:00 PM</h3>
       </div>
-      <div class="col col_fix">
+      <div class="w3-col l4 w3-center ">
         <div class="icon-map-marker"><i class="fas fa-id-card fa-2x"></i></div>
         <h1 style="line-height: 30px; ">Thông tin liên lạc</h1>
-        <h2 style="line-height: 30px; ">Nhà Trai - Thành Quang Long - <span class="yellowhighlight"><a href="tel:+84788360276">078 8360 276</a></span></h2>
-        <h2 style="line-height: 30px; ">Nhà Gái - Phan Nguyễn Yến Nhi - <span class="yellowhighlight"><a href="tel:+84795588069">079 5588 069 </a></span></h2>
+        <h3 class="content" style="line-height: 30px; ">Nhà Trai - Thành Quang Long - <span class="yellowhighlight"><a href="tel:+84788360276">078 8360 276</a></span></h3>
+        <h3 class="content" style="line-height: 30px; ">Nhà Gái - Phan Nguyễn Yến Nhi - <span class="yellowhighlight"><a href="tel:+84795588069">079 5588 069 </a></span></h3>
       </div>
-      <div class="col">
+      <div class="w3-col l4 w3-center">
         <div class="icon-map-marker"><i class="fas fa-map-marked-alt fa-2x"></i></div>
         <h1 style="line-height: 30px; ">King's Palace - Queen's Palace</h1>
-        <h2 style="line-height: 30px; ">Lô 1A & 2A Đường 2 tháng 9, P. Hòa Cường, Hải Châu</h2>
+        <h3 class="content" style="line-height: 30px; ">Lô 1A & 2A Đường 2 tháng 9, P. Hòa Cường, Hải Châu</h3>
       </div>
     </div>
-    <div class="row">
+    <div class="w3-center l12 m12 s12">
       <div class="col mapbg ">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.414692149979!2d108.22245980081946!3d16.0439563615391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c2e2c1c48d%3A0x91fb550426114823!2zVHJ1bmcgVMOibSBI4buZaSBOZ2jhu4sgJiBUaeG7h2MgQ8aw4bubaSBLaW5nJ3MgUGFsYWNl!5e0!3m2!1svi!2s!4v1629567134450!5m2!1svi!2s" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
@@ -274,12 +274,29 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
   </div>
   <div class="footer">
     <p>© 2021 Copyright <a href="https://www.facebook.com/OPTeamBoss/">OPTeam</a>. All Right reserved.</p>
-    <h2> Trang Web được tạo ra bởi 💕 cực bự của Long và Nhi. Đây là trang web chỉ phục vụ cho đám cưới, không cung cấp cho dịch vụ kinh doanh</h2>
+    <h2 class="content" style="font-size:25px"> Trang Web được tạo ra bởi 💕 cực bự của Long và Nhi. Đây là trang web chỉ phục vụ cho đám cưới, không cung cấp cho dịch vụ kinh doanh</h2>
   </div>
 </footer>
 <!-- file js -->
 <script src="acess/js/sprict.js"></script>
 <script src="acess/js/waypoint/lib/jquery.waypoints.min.js"></script>
 <script src="acess/js/jquery.mb.YTPlayer.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: '2',
+    spaceBetween: 40,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
 </html>
