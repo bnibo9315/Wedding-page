@@ -618,5 +618,11 @@ select {
     max-width: 1300px !important;
   }
 }
-
+.center-img{
+  text-align: center;
+}
+#QRImg{
+  width: 500px;
+  height: auto;
+}
 /******************** colgroup Fix Responsive Web***********************/
