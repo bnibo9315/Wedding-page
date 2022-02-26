@@ -1,12 +1,18 @@
 <?php
 header('Content-Type: application/json');
-
+$path = "QRCode/";
+include('phpqrcode/qrlib.php');
 $connect = mysqli_connect("localhost", "id17537787_longadmin", "LongNhi93152022.", "id17537787_data_wedding");
 if (!$connect) {
     // echo reponse(mysqli_connect_error(), false);
-} 
+}
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+    $filename = $path . 'qrcode' . md5(time()) . '.png';
+    $content = "+ Name: " . $_POST['username'] . "\n";
+    $content .=  "+ Number Phone: " . $_POST['phone'] . "\n";
+    $content .=  "+ Number Customer: " . $_POST['number'] . "\n";
+    $content .=  "+ Type: " . $_POST['type_user'];
     $name = $_POST['username'];
     $phone =  $_POST['phone'];
     $number = $_POST['number'];
@@ -17,9 +23,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     $sql = "INSERT INTO thongtinkhac (`ten`,`sdt`,`soluong`,`kieukhachmoi` ,`tinnhan`,`thoigian`) VALUE ('$name','$phone','$number','$type_user','$messeger',CURRENT_TIMESTAMP) ";
     if (mysqli_query($connect, $sql)) {
-        echo reponse('Gửi tin nhắn thành công', true);
+        QRcode::png($content, $filename, QR_ECLEVEL_L, 30);
+        echo reponse($filename, true);
     } else {
-        echo reponse('Gửi tin nhắn thất bại', false);
+        echo reponse("False", false);
     }
 }
 function reponse($data, $status)

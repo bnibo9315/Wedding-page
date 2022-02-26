@@ -20,7 +20,6 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<!-- bootstrap file -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<!-- file css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -339,6 +338,7 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
 		},
 	});
 	$(document).ready(function() {
+
 		$('#SData').submit(function(e) {
 			e.preventDefault();
 
@@ -351,25 +351,21 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
 				success: function(data) {
 					if (data['status'] == true) {
 						$('#QRCode').modal('show');
-						<?php
-						$path = "php/QRCode/";
-						include('php/phpqrcode/qrlib.php');
-						$filename = $path . 'qrcode' . md5(time()) . '.png';
-						QRcode::png("test", $filename, QR_ECLEVEL_L, 30);
-						?>
-						$('#QRImg').attr('src', '<?= $filename ?>');
+						$('#QRImg').attr('src', "php/" + data['mess']);
+						$('#saveImg').click(function(e) {
+							$('#saveImg').attr('onclick', saveImg("php/" + data['mess']));
+						})
 					} else {
 						$('#Notifal').modal('show');
 					}
 				}
 			});
 		});
-		$('#saveImg').click(function(e) {
-			$('#saveImg').attr('onclick', saveImg('<?= $filename ?>'));
-		})
-		$('.btn-danger').click(function(e){
+
+		$('.btn-danger').click(function(e) {
 			window.location.reload();
 		})
+
 		function saveImg(source) {
 			const fileName = source.split('/').pop();
 			var el = document.createElement("a");
