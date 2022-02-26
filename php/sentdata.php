@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (mysqli_query($connect, $sql)) {
         echo reponse('Gửi tin nhắn thành công', true);
     } else {
-        echo reponse('Gửi tin nhắn thất bại', false,);
+        echo reponse('Gửi tin nhắn thất bại', false);
     }
 }
 function reponse($data, $status)

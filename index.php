@@ -367,7 +367,9 @@ Author : Thành Quang Long(binbo9315) -  Fouder OPTeam
 		$('#saveImg').click(function(e) {
 			$('#saveImg').attr('onclick', saveImg('<?= $filename ?>'));
 		})
-
+		$('.btn-danger').click(function(e){
+			window.location.reload();
+		})
 		function saveImg(source) {
 			const fileName = source.split('/').pop();
 			var el = document.createElement("a");
